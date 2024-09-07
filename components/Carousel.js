@@ -3,7 +3,10 @@ import React,{useState, useEffect} from "react";
 import img1 from './images/img1.png'
 const images = [
 //    ' https://picsum.photos/200',
-'./images/img1.png'
+'https://raw.githubusercontent.com/M-Ehthisham18/todo-list/main/components/images/img1.png',
+'https://raw.githubusercontent.com/M-Ehthisham18/todo-list/main/components/images/img2.png',
+'https://raw.githubusercontent.com/M-Ehthisham18/todo-list/main/components/images/img3.png',
+'https://raw.githubusercontent.com/M-Ehthisham18/todo-list/main/components/images/img4.png',
 //     './images/img1.png',
 //   './images/img2.png',
 //   './images/img3.png',
@@ -38,7 +41,7 @@ const Carousel = () => {
           <img
             src={images[currentIndex]}
             alt="carousel"
-            className="w-full h-64 object-cover rounded-lg"
+            className="w-full h-64 object-contain rounded-lg"
           />
           <button
             onClick={handlePrev}
